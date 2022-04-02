@@ -7,7 +7,7 @@
 	<key>ProgramArguments</key>
 	<array>
 		# <string>/Users/INSTALL LOCATION/python.app/Contents/MacOS/python</string> - "INSTALL LOCATION" needs to be replaced for relevant machine
-		<string>project.py</string>
+		#<string>FILENAME.py</string> - "FILENAME" needs to be replace with name of .py file to be run (kookcast.py in this repo)
 	</array>
 	<key>RunAtLoad</key>
 	<false/>
