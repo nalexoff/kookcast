@@ -27,7 +27,7 @@ This file contains a secondary aspect of the kookcast. It is a Python applicatio
 * Create dataframes of the NOAA buoy files
 * Append daily data to a local CSV (to add to the 'historical database' that can be analyzed)
 * Generate summary information of the historical NOAA buoy data gathered 
-* Visualizes the data to aid in comparative analysis (via Jupyter Notebook)
+* Visualize the data to aid comparative analysis (via Jupyter Notebook)
 
 ### launchdJob.plist
-the .plist filetype for automating the execution fo the kookcast should be installed to: Macintosh HD/Library/LaunchAgents/filename.plist
+This file helps automate the kookcast by using MacOS launchd functionality (similar to a cron job). By installing it here: Macintosh HD/Library/LaunchAgents/filename.plist the kookcast and the email it sends can run on an automated schedule
