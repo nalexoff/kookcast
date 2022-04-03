@@ -13,7 +13,20 @@ While the primary value of the kookcast is the automatic daily email that it sen
 *Note: I have renamed my files to help communicate the intent of the code written within each. This has been done to aid scannability of the repo. Actual usage of the kookcast would require addressing some file name dependencies within the code.*
 
 ### generateForecastandSendemail.py
+This file contains the primary functionality of the kookcast. It is a Python application that:
+* Downloads files from NOAA buoys in the ocean
+* Parses the NOAA buoy files and isolates the relevant/recent information from them, transforming data where necessary
+* Crawls publicly-available forecasts on the internet
+* Receives weather data from the Wunderground API
+* Receives tide data from a NOAA API
+* Combines all data and sends an email
 
+### appendDatatoCSVandAnalyze.py
+This file contains a secondary aspect of the kookcast. It contains Python application that:
+* Downloads files from NOAA buoys in the ocean
+* Creates dataframes for analysis of the NOAA buoy files using the pandas and matplotlib libraries
+* Generates summary information of the NOAA buoy data 
+* Visualizes the data to aid in comparative analysis
 
 ### plist
 the .plist filetype for automating the execution fo the kookcast should be installed to: Macintosh HD/Library/LaunchAgents/filename.plist
