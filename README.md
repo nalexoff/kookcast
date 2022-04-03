@@ -22,11 +22,12 @@ This file contains the primary functionality of the kookcast. It is a Python app
 * Combines all data and sends an email
 
 ### appendDatatoCSVandAnalyze.py
-This file contains a secondary aspect of the kookcast. It contains Python application that:
-* Downloads files from NOAA buoys in the ocean
-* Creates dataframes for analysis of the NOAA buoy files using the pandas and matplotlib libraries
-* Generates summary information of the NOAA buoy data 
-* Visualizes the data to aid in comparative analysis
+This file contains a secondary aspect of the kookcast. It is a Python application that leverages the pandas and matplotlib libraries to:
+* Download files from NOAA buoys in the ocean
+* Create dataframes of the NOAA buoy files
+* Append daily data to a local CSV (to add to the 'historical database' that can be analyzed)
+* Generate summary information of the historical NOAA buoy data gathered 
+* Visualizes the data to aid in comparative analysis (via Jupyter Notebook)
 
-### plist
+### launchdJob.plist
 the .plist filetype for automating the execution fo the kookcast should be installed to: Macintosh HD/Library/LaunchAgents/filename.plist
